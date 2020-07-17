@@ -13,8 +13,20 @@ This is a console application built using C#. It will create a Price List for a 
   * Bread: Buy 2, get 1 free. A single loaf costs $5.
   * Pastry: Buy 1 for $2 or 3 for $5.
 
-**Behavior**: Program will allow user to specify how many loaves of Bread and how many Pastrys they'd like.
+**Behavior**: Program will allow user to specify how many loaves of Bread they'd like.
   * Input: "1 loaf of Bread"
+  * Output: "$5"
+
+**Behavior**: Program will allow user to specify how many Pastrys they'd like.
+  * Input: "1 loaf of Bread"
+  * Output: "$5"
+
+  **Behavior**: Program will allow user to specify how many loaves of Bread they'd like and provide a discount if over two loaves of bread are selected.
+  * Input: "3 loaves of Bread"
+  * Output: "$10"
+
+   **Behavior**: Program will allow user to specify how many Pastries they'd like and provide a discount if over three Pastries are selected.
+  * Input: "3 pastries"
   * Output: "$5"
 
 
