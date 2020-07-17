@@ -18,7 +18,7 @@ namespace PierreBakery.Models
     
     BreadPrice = inputBread *5;
     BreadDeal = BreadPrice /3;
-    BreadFinalPrice = BreadDeal - BreadPrice;
+    BreadFinalPrice = BreadPrice -BreadDeal;
     
     return BreadFinalPrice;
   }
