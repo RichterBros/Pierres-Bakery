@@ -21,5 +21,16 @@ namespace PierreBakery.Tests
       Bread newBread= new Bread(1);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
+  
+  [TestMethod]
+    public void PastryOrderTotal_ReturnsNumber()
+    {
+      int testNumber =2;
+      Pastry newPastry= new Pastry(1);
+      int resultNumber = Pastry.PastryOrderTotal();
+      Assert.AreEqual(testNumber, resultNumber);
+    
+    }
+  
   }
 }

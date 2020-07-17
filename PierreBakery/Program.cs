@@ -7,7 +7,7 @@ namespace PierreBakery {
   {
     public static void Main()
     {
-  
+  Console.WriteLine(Pastry.PastryOrderTotal(1));
     }
   }
 }
