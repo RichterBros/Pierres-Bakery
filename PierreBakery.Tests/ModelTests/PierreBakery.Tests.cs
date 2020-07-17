@@ -27,7 +27,7 @@ namespace PierreBakery.Tests
     {
       int testNumber =2;
       Pastry newPastry= new Pastry(1);
-      int resultNumber = Pastry.PastryOrderTotal();
+      int resultNumber = Pastry.PastryOrderTotal(1);
       Assert.AreEqual(testNumber, resultNumber);
     
     }
