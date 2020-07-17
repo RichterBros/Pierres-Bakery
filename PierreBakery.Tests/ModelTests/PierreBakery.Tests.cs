@@ -29,8 +29,15 @@ namespace PierreBakery.Tests
       Pastry newPastry= new Pastry(1);
       int resultNumber = Pastry.PastryOrderTotal(1);
       Assert.AreEqual(testNumber, resultNumber);
-    
     }
   
+   [TestMethod]
+    public void PastryOrderTotal_ReturnsNumberWithDiscount()
+    {
+      int testNumber =2;
+      Pastry newPastry= new Pastry(6);
+      int resultNumber = Pastry.PastryOrderTotal(7);
+      Assert.AreEqual(testNumber, resultNumber);
+    }
   }
 }

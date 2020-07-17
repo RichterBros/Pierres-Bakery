@@ -14,16 +14,20 @@ namespace PierreBakery.Models
   
     public static int PastryOrderTotal(int inputPastry)
     {
-    int PastryPrice = 0;
-      
-      if (inputPastry == 1)
-      {
-        PastryPrice = 2;
-      }
-    return PastryPrice;
+    int PastryPrice = 2;
+    int PastryDiscount;
+    int PastryRemainder; 
+    int PastryOrderTotal;
+    
+    PastryDiscount = inputPastry/3 *5;
+    PastryRemainder = inputPastry % 3 * PastryPrice;
+     
+    PastryOrderTotal = PastryDiscount + PastryRemainder;
+
+    return PastryOrderTotal;
+ 
     }
-  
-  
+ 
   }
 }
   
