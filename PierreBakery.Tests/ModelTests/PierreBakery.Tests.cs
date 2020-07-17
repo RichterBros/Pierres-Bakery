@@ -26,7 +26,7 @@ namespace PierreBakery.Tests
     public void PastryOrderTotal_ReturnsNumber()
     {
       int testNumber =2;
-      Pastry newPastry= new Pastry(1);
+      Pastry newPastry= new Pastry(7);
       int resultNumber = Pastry.PastryOrderTotal(1);
       Assert.AreEqual(testNumber, resultNumber);
     }
@@ -34,8 +34,8 @@ namespace PierreBakery.Tests
    [TestMethod]
     public void PastryOrderTotal_ReturnsNumberWithDiscount()
     {
-      int testNumber =2;
-      Pastry newPastry= new Pastry(6);
+      int testNumber =12;
+      Pastry newPastry= new Pastry(7);
       int resultNumber = Pastry.PastryOrderTotal(7);
       Assert.AreEqual(testNumber, resultNumber);
     }
