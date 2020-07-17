@@ -17,7 +17,7 @@ namespace PierreBakery
       Console.WriteLine("enter amount of bread to buy");
       int inputBread = Int32.Parse(Console.ReadLine());
       Console.WriteLine("your total for pastry is " + "$" + Pastry.PastryOrderTotal(inputPastry));
-      Console.WriteLine("your total for Bread is " + "$" + Bread.BreadOrderTotal(inputBread));
+      Console.WriteLine("your total for bread is " + "$" + Bread.BreadOrderTotal(inputBread));
       int GrandTotal = Bread.BreadOrderTotal(inputBread) + Pastry.PastryOrderTotal(inputPastry);
       Console.WriteLine("your grand total is " + "$" + GrandTotal);
     }

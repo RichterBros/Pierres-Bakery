@@ -17,7 +17,7 @@ This is a console application built using C#. It will create a Price List for a 
   * Input: "1 loaf of Bread"
   * Output: "$5"
 
-**Behavior**: Program will allow user to specify how many Pastrys they'd like.
+**Behavior**: Program will allow user to specify how many Pastries they'd like.
   * Input: "1 loaf of Bread"
   * Output: "$5"
 
