@@ -18,7 +18,7 @@ namespace PierreBakery.Tests
   [TestMethod]
     public void BreadConstructor_CreatesInstanceOfClass_Bread()
     {
-      Bread newBread= new Bread();
+      Bread newBread= new Bread(1);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
   }
