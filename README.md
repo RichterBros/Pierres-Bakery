@@ -22,9 +22,9 @@ This is a console application built using C#. It will create a Price List for a 
 
 1. Open in your editor of choice, or use [Visual Studio Code](https://code.visualstudio.com/)
 
-2. To test the code, navigate to the ToDoList.Tests directory, and in the terminal type `dotnet restore` then `dotnet test`.
+2. To test the code, navigate to the PierreBakery.Tests directory, and in the terminal type `dotnet restore` then `dotnet test`.
 
-2. In the terminal, navigate to the ToDoList directory, and type `dotnet run`.
+2. In the terminal, navigate to the PierreBakery directory, and type `dotnet run`.
 
 ## Known Bugs
 
