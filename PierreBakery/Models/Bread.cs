@@ -3,28 +3,26 @@ namespace PierreBakery.Models
   public class Bread
   {
     public int UserBreadAmount { get; }
+    public int BreadFinalPrice { get; set; }
     public Bread(int inputBread)
     {
       UserBreadAmount = inputBread;
     }
-    public static int BreadOrderTotal(int inputBread)
+    public int GetTotal()
 
     {
-      if (inputBread == 1)
+      if (UserBreadAmount == 1)
       {
         return 5;
       }
-      else if (inputBread == 2)
+      else if (UserBreadAmount == 2)
       {
         return 10;
       }
-      int BreadPrice;
-      int BreadDeal;
-      int BreadFinalPrice;
-
-      BreadPrice = inputBread * 5;
-      BreadDeal = BreadPrice / 3;
-      BreadFinalPrice = BreadPrice - BreadDeal;
+     
+      int BreadPrice = UserBreadAmount * 5;
+      int BreadDeal = BreadPrice / 3;
+      int BreadFinalPrice = BreadPrice - BreadDeal;
 
       return BreadFinalPrice;
     }

@@ -3,15 +3,14 @@ namespace PierreBakery.Models
   public class Pastry
   {
     public int UserPastryAmount { get; }
-    public int PastryOrderTotal { get; set;}
+    public int PastryOrderTotal { get; set; }
 
-    public int PastryPrice { get; set;}
+    public int PastryPrice { get; set; }
     
     
-    public Pastry(int inputPastry, int cost)
+    public Pastry(int inputPastry)
     {
       UserPastryAmount = inputPastry;
-      PastryOrderTotal = cost;
       PastryPrice = 2;
     }
     public int GetTotal()
@@ -24,6 +23,7 @@ namespace PierreBakery.Models
     }
   }
 }
+     
       
       
      
