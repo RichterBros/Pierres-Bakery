@@ -14,11 +14,14 @@ namespace PierreBakery
       Console.WriteLine("-------------------------------------------------");
       Console.WriteLine("enter amount of pastry to buy");
       int inputPastry = Int32.Parse(Console.ReadLine());
+      
+      Pastry pastry = new Pastry(inputPastry,0);
+     
       Console.WriteLine("enter amount of bread to buy");
       int inputBread = Int32.Parse(Console.ReadLine());
-      Console.WriteLine("your total for pastry is " + "$" + Pastry.PastryOrderTotal(inputPastry));
+      Console.WriteLine("your total for pastry is " + "$" + pastry.GetTotal());
       Console.WriteLine("your total for bread is " + "$" + Bread.BreadOrderTotal(inputBread));
-      int GrandTotal = Bread.BreadOrderTotal(inputBread) + Pastry.PastryOrderTotal(inputPastry);
+      int GrandTotal = Bread.BreadOrderTotal(inputBread) + pastry.GetTotal();
       Console.WriteLine("your grand total is " + "$" + GrandTotal);
     }
   }

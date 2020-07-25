@@ -3,23 +3,30 @@ namespace PierreBakery.Models
   public class Pastry
   {
     public int UserPastryAmount { get; }
-    public Pastry(int inputPastry)
+    public int PastryOrderTotal { get; set;}
+
+    public int PastryPrice { get; set;}
+    
+    
+    public Pastry(int inputPastry, int cost)
     {
       UserPastryAmount = inputPastry;
+      PastryOrderTotal = cost;
+      PastryPrice = 2;
     }
-    public static int PastryOrderTotal(int inputPastry)
+    public int GetTotal()
     {
-      int PastryPrice = 2;
-      int PastryDiscount;
-      int PastryRemainder;
-      int PastryOrderTotal;
-
-      PastryDiscount = inputPastry / 3 * 5;
-      PastryRemainder = inputPastry % 3 * PastryPrice;
+      int PastryDiscount = UserPastryAmount / 3 * 5;
+      int PastryRemainder = UserPastryAmount % 3 * PastryPrice;
       PastryOrderTotal = PastryDiscount + PastryRemainder;
 
       return PastryOrderTotal;
     }
   }
 }
+      
+      
+     
+      
+
 
